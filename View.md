@@ -1,12 +1,12 @@
 # VIEWS
-- [1. SHIFT_WISE_MANAGER]
-- [2. DEPT_WISE_EMP]
-- [3. EMPLOYEE_INFORMATION]
-- [4. MANAGER_INFORMATION]
-- [5. HIGH_SALARY_EMP]
-- [6. LOWER_SALARY_EMP]
-- [7. EMP_PER_MANAGER]
-- [8. AVG_MAX_MIN_SAL_EMP]
+- [1. SHIFT WISE MANAGER]
+- [2. DEPT WISE EMPLOYEE]
+- [3. EMPLOYEE INFORMATION]
+- [4. MANAGER INFORMATION]
+- [5. HIGH SALARY EMPLOYEE]
+- [6. LOWER SALARY EMPLOYEE]
+- [7. EMPLOYEE PER MANAGER]
+- [8. AVG MAX MIN SALARY EMPLOYEE]
 
 
 
@@ -76,11 +76,11 @@ CREATE VIEW EMP_PER_MANAGER AS SELECT M.MANAGERNAME,COUNT(E.EMPLOYEEID) AS NO_OF
 CREATE VIEW AVG_MAX_MIN_SAL_EMP AS SELECT D.DEPARTMENTNAME,AVG(EMPLOYEESALARY) AS AVG_SALARY,MAX(EMPLOYEESALARY) AS MAX_SALARY,MIN(EMPLOYEESALARY) AS MIN_SALARY,COUNT(E.EMPLOYEEID) AS NO_OF_EMP FROM EMPLOYEE E,DEPARTMENT D WHERE E.DEPARTMENT_ID=D.DEPARTMENTID GROUP BY D.DEPARTMENTNAME;
 ```
 
-[1. SHIFT_WISE_MANAGER]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#1-shift_wise_manager>
-[2. DEPT_WISE_EMP]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#2--dept_wise_emp>
-[3. EMPLOYEE_INFORMATION]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#3-employee_information>
-[4. MANAGER_INFORMATION]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#4-manager_information>
-[5. HIGH_SALARY_EMP]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#5-high_salary_emp>
-[6. LOWER_SALARY_EMP]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#6-lower_salary_emp>
-[7. EMP_PER_MANAGER]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#7-emp_per_manager>
-[8. AVG_MAX_MIN_SAL_EMP]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#8-avg_max_min_sal_emp>
+[1. SHIFT WISE MANAGER]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#1-shift_wise_manager>
+[2. DEPT WISE EMPLOYEE]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#2--dept_wise_emp>
+[3. EMPLOYEE INFORMATION]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#3-employee_information>
+[4. MANAGER INFORMATION]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#4-manager_information>
+[5. HIGH SALARY EMPLOYEE]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#5-high_salary_emp>
+[6. LOWER SALARY EMPLOYEE]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#6-lower_salary_emp>
+[7. EMPLOYEE PER MANAGER]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#7-emp_per_manager>
+[8. AVG MAX MIN SALARY EMPLOYEE]: <https://github.com/Prosen-Ghosh/PL_SQL_C_Sharp_Project/blob/master/View.md#8-avg_max_min_sal_emp>
